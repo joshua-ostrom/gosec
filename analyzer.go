@@ -112,7 +112,7 @@ func NewAnalyzer(conf Config, tests bool, excludeGenerated bool, logger *log.Log
 		excludeGenerated: excludeGenerated,
 	}
 }
-
+// #nosec
 // SetConfig updates the analyzer configuration
 func (gosec *Analyzer) SetConfig(conf Config) {
 	gosec.config = conf
